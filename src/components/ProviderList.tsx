@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import ProviderForm from "./ProviderForm";
 import Provider from "./Provider";
 import { useSelector } from "react-redux";
 import {
@@ -7,10 +6,10 @@ import {
   selectProvidersState,
   selectProvidersStatus,
   posibleStatus,
-} from "../../state/slice/providerSlice";
-import { getAllProviders } from "../../actions/provider/getAllProviders";
-import { useAppDispatch } from "../../store";
-import { RootState } from "../../store";
+} from "../slice/providerSlice";
+import { getAllProviders } from "../actions/getAllProviders";
+import { useAppDispatch } from "../store";
+import { RootState } from "../store";
 import { useNavigate } from "react-router-dom";
 
 interface IProviderListProps {}
@@ -39,7 +38,6 @@ const ProviderList: React.FunctionComponent<IProviderListProps> = () => {
 
   return (
     <div>
-      <ProviderForm />
       <table className="justTable">
         <thead>
           <tr className="justTableHead">

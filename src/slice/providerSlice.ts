@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { RootState } from "../store";
-import { getAllProviders } from "../actions/getAllProvides";
+import { getAllProviders } from "../actions/getAllProviders";
 
 type providerType = {
   id: string;
